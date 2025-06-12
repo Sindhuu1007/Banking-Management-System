@@ -1,11 +1,10 @@
-#pragma once
-# include <iostream>
+#ifndef BST_NODE_H
+#define BST_NODE_H
+
+# include <bits/stdc++.h>
 using namespace std;
-# include <vector>
-# include <fstream>
-# include <string>
-class BST_Node 
-{
+
+class BST_Node {
 public:
 	BST_Node * left;
 	BST_Node * right;
