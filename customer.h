@@ -1,21 +1,18 @@
 #pragma once
 # include "BST_Tree.h"
 # include "Hashtable.h"
-void customer()
-{
+void customer(){
 	BST_Tree t;
 	Hashtable h;
 	int condition = 0;
-	while (condition != 3)
-	{
+	while (condition != 3){
 		cout << "welcome CUSTOMER" << endl;
 		cout << "choose the following please" << endl;
 		cout << "press 1 to see account details" << endl;
 		cout << "press 2 to see transaction history  " << endl;
 		cout << "press 3 to exit" << endl;
 		cin >> condition;
-		if (condition == 1)
-		{
+		if (condition == 1){
 			int accountno;
 			cout << "please enter account number" << endl;
 			cin >> accountno;
@@ -27,15 +24,11 @@ void customer()
 			cout << "PASSWORD :" << temp->password << endl;
 			cout << "BALANCE :" << temp->balance << endl;
 		}
-		if (condition == 2)
-		{
+		if (condition == 2){
 			// transaction file print karani ha account search kr k
 		}
-		if (condition == 3)
-		{
+		if (condition == 3){
 			condition = 3;
 		}
-
 	}
-
 }
