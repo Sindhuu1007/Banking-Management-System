@@ -5,10 +5,8 @@ using namespace std;
 # include <fstream>
 # include <string>
 # include "Node_1.h"
-class Node
-{
+class Node{
 public:
-
 	Node * next;
 	Node_1 * pre;
 	int data;
