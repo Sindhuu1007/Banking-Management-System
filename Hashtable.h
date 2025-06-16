@@ -1,9 +1,9 @@
-#pragma once
+#ifndef HASHTABLE_H
+#define HASHTABLE_H
 # include "Node.h"
 # include "Node_1.h"
 
-class Hashtable
-{
+class Hashtable{
 public:
 	Node * start;
 	Hashtable();
@@ -15,3 +15,5 @@ public:
 	void displayPasswords();
 	void delete_password(int);
 };
+
+#endif
