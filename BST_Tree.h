@@ -1,4 +1,6 @@
-#pragma once
+#ifndef BST_TREE_H
+#define BST_TREE_H
+
 # include "BST_Node.h"
 # include "Hashtable.h"
 # include <stdio.h>
