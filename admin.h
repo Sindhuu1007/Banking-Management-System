@@ -1,13 +1,11 @@
 #pragma once
 # include "BST_Tree.h"
 # include "Hashtable.h"
-void admin()
-{
+void admin(){
 	BST_Tree t;
 	Hashtable h;
 	int condition = 0;
-	while (condition != 6)
-	{
+	while (condition != 6){
 		cout << "welcome ADMIN" << endl;
 		cout << "choose the following please" << endl;
 		cout << "press 1 to add account " << endl;
@@ -17,8 +15,7 @@ void admin()
 		cout << "press 5 to edit account " << endl;
 		cout << "press 6 to exit" << endl;
 		cin >> condition;
-		if (condition == 1)
-		{
+		if (condition == 1){
 			string n = "", a = "";
 			int acc, p, b;
 			cout << "enter name" << endl;
@@ -33,8 +30,7 @@ void admin()
 			cin >> b;
 			t.add_Account(n, a, acc, p, b);
 		}
-		if (condition == 2)
-		{
+		if (condition == 2){
 			int acc = 0;
 			cout << "enter account number" << endl;
 			cin >> acc;
@@ -46,21 +42,15 @@ void admin()
 			t.update_server(t.Root);
 			cout << "update h gia" << endl;
 		}
-		if (condition == 3)
-		{
+		if (condition == 3){
 			t.load_Server();
 			t.printoinfo(t.Root);
 		}
-		if (condition == 4)
-		{
+		if (condition == 4){
 			h.displayPasswords();
 		}
-		if (condition == 5)
-		{
-
-		}
-		if (condition == 6)
-		{
+		if (condition == 5){}
+		if (condition == 6){
 			condition = 6;
 		}
 	}
