@@ -1,13 +1,11 @@
 #pragma once
 # include "BST_Tree.h"
 # include "Hashtable.h"
-void staff()
-{
+void staff(){
 	BST_Tree t;
 	Hashtable h;
 	int condition = 0;
-	while (condition != 5)
-	{
+	while (condition != 5){
 		cout << "welcome STAFF" << endl;
 		cout << "choose the following please" << endl;
 		cout << "press 1 to see transaction history  " << endl;
@@ -16,12 +14,10 @@ void staff()
 		cout << "press 4 to deposit " << endl;
 		cout << "press 5 to exit" << endl;
 		cin >> condition;
-		if (condition == 1)
-		{
+		if (condition == 1){
 			// transaction file print karani ha account search kr k
 		}
-		if (condition == 2)
-		{
+		if (condition == 2){
 			int senderaccountno = 0, amount = 0, recieveraccountno=0;
 			cout << "please enter  sender account number" << endl;
 			cin >> senderaccountno;
@@ -31,8 +27,7 @@ void staff()
 			cin >> amount;
 			t.transfer(senderaccountno,amount,recieveraccountno);
 		}
-		if (condition == 3)  // withdraw
-		{
+		if (condition == 3)  // withdraw{
 			int accountno = 0, amount = 0;
 			cout << "please enter account number" << endl;
 			cin >> accountno;
@@ -40,8 +35,7 @@ void staff()
 			cin >> amount;
 			t.withdraw(accountno, amount);
 		}
-		if (condition == 4)
-		{
+		if (condition == 4){
 			int accountno = 0, amount = 0;
 			cout << "please enter account number" << endl;
 			cin >> accountno;
@@ -49,11 +43,8 @@ void staff()
 			cin >> amount;
 			t.deposit(accountno, amount);
 		}
-		if (condition == 5)
-		{
+		if (condition == 5){
 			condition = 5;
 		}
-
 	}
-
 }
