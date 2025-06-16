@@ -1,5 +1,3 @@
-#ifndef BST_NODE_H
-#define BST_NODE_H
 # include <bits/stdc++.h>
 using namespace std;
 
