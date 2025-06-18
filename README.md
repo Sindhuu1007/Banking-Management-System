@@ -8,4 +8,3 @@ A comprehensive **Banking Management System** developed using **C++** for managi
 - Deposit and withdrawal transactions
 - Efficient searching using BST and Hash Table
 - Admin and customer authentication
-- File handling for persistent data storage
